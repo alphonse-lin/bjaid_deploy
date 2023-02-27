@@ -10,7 +10,7 @@ app = Flask(__name__,template_folder="./dist")
 CORS(app)
 
 # read flask config
-with open('./backend/flask_config.json','r',encoding='utf8')as fp:
+with open('flask_config.json','r',encoding='utf8')as fp:
     opt = json.load(fp)
     print('Flask Config : ', opt)
 
