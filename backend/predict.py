@@ -33,7 +33,7 @@ def profile():
     print("debug_____________",nid)
     
     joblib_model = joblib.load(model_path)
-    d={"ALT":ALT,"GLO":GLB,"PLT":PLT,"ANA":ANA,"IgG":IgG}
+    d={"ALT":ALT,"PLT":PLT,"GLO":GLB,"IgG":IgG, "ANA":ANA}
     result=joblib_model.predict_proba(pd.DataFrame(d,index=[0]))
     temp=0 if result[0][0]>result[0][1] else 1
     
