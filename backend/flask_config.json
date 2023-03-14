@@ -1,5 +1,5 @@
 {
     "model_dir": "models",
     "model_name": "random forest.pkl",
-    "log_path": "backend/log.txt"
+    "log_path": "log.txt"
 }
